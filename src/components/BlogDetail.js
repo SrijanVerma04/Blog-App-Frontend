@@ -45,7 +45,7 @@ const BlogDetail = () => {
   } , [id])
 
   const sendRequest = async() => {
-    const res = await axios.put(`http://localhost:4000/api/blog/update/${id}` , {
+    const res = await axios.put(`https://nodejs-blogapp.onrender.com/api/blog/update/${id}` , {
       title: inputs.title,
       description: inputs.description,
     }).catch((err) => console.log(err));
